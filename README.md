@@ -1,4 +1,4 @@
-# 🤖 OpenAI TypeScript CLI Chat Application 🚀
+# 🤖 Chatty TypeScript 🚀
 
 ## 📝 Overview
 
@@ -13,8 +13,8 @@ A TypeScript command-line chat application that interfaces with OpenAI's GPT mod
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/openai-typescript-cli.git
-cd openai-typescript-cli
+git clone https://github.com/decagondev/chatty-typescript.git
+cd chatty-typescript
 ```
 
 2. Install Dependencies
