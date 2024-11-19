@@ -1,4 +1,4 @@
-# 🤖 Chatty TypeScript 🚀
+# 🤖 Chatty: OpenAI TypeScript CLI Chat Application 🚀
 
 ## 📝 Overview
 
@@ -7,10 +7,11 @@ A TypeScript command-line chat application that interfaces with OpenAI's GPT mod
 ## 🛠️ Prerequisites
 
 - Node.js (v16+ recommended)
-- npm or yarn
+- Docker (optional)
 
 ## 🚀 Setup & Installation
 
+### Local Setup
 1. Clone the repository
 ```bash
 git clone https://github.com/decagondev/chatty-typescript.git
@@ -27,30 +28,48 @@ npm install
 echo "OPENAI_API_KEY=your_openai_api_key" > .env
 ```
 
-## 🏃‍♂️ Running the Application
-
-### Development Mode
+### Docker Setup
+1. Build Docker Image
 ```bash
-npm run dev
+docker build -t chatty-box .
 ```
 
-### Production Build
+2. Run Docker Container
 ```bash
-npm run build
-npm start
+# With API key as environment variable
+docker run -it \
+  -e OPENAI_API_KEY=your_openai_api_key \
+  chatty-box
+```
+
+## 🏃‍♂️ Running the Application
+
+### Local Development
+```bash
+npm run dev  # Development mode
+npm run build  # Compile TypeScript
+npm start  # Run compiled application
+```
+
+### Docker Execution
+```bash
+# Interactive mode
+docker run -it \
+  -e OPENAI_API_KEY=your_openai_api_key \
+  chatty-box
 ```
 
 ## 📋 Usage
 
-- Type your messages at the prompt
-- Type 'exit' to end the chat session
-- Maintains conversation context across messages
+- Type messages at the prompt
+- Type 'exit' to end chat
+- Maintains conversation context
 
 ## 🛠️ Troubleshooting
 
-- Ensure Node.js is installed
-- Verify API key is correct
-- Check internet connectivity
+- Verify Node.js installation
+- Check API key validity
+- Ensure internet connectivity
 
 ## 📜 License
 
