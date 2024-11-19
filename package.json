@@ -1,0 +1,21 @@
+{
+  "name": "chatty-typescript",
+  "version": "1.0.0",
+  "description": "OpenAI CLI Chat Application in TypeScript",
+  "main": "chatty.ts",
+  "scripts": {
+    "start": "ts-node chatty.ts",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn chatty.ts"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  }
+}
